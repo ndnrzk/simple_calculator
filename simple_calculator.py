@@ -10,8 +10,12 @@ def calculator():
     result = None
     if operation == "+":
         result = int(first_number) + int(second_number)
-    if operation == "-":
-        result = int (first_number) - int (second_number)
+    elif operation == "-":
+        result = int(first_number) - int(second_number)
+    elif operation == "/":
+        result = int(first_number) / int(second_number)
+    elif operation == "*":
+        result = int(first_number) * int(second_number)
     print(first_number + " " + operation + " " + second_number + " = " + str(result))
 
 calculator()
